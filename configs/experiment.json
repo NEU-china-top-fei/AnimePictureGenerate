@@ -1,0 +1,39 @@
+{
+  "dataset": {
+    "repo_id": "lambda/naruto-blip-captions",
+    "revision": "1ed13e8ef280bd45e3bbac4cfa8bbd9d64ec9f89",
+    "declared_rows": 1221,
+    "image_column": "image",
+    "caption_column": "text"
+  },
+  "model": {
+    "repo_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+    "resolution": 512,
+    "precision": "fp16"
+  },
+  "budget": {
+    "session_hours_cap": 7
+  },
+  "training": {
+    "rank": 16,
+    "alpha": 16,
+    "learning_rate": 0.0001,
+    "micro_batch_per_experiment": 1,
+    "gradient_accumulation_steps": 4,
+    "effective_batch_per_experiment": 4,
+    "max_optimizer_updates": 2000,
+    "checkpoint_interval_updates": 250,
+    "pilot_timed_updates": 50,
+    "steps_fixed_after_pilot": true,
+    "seed": 42
+  },
+  "evaluation": {
+    "test_prompt_count": 24,
+    "seeds_per_prompt": 4,
+    "images_per_experiment": 96,
+    "total_images": 288,
+    "initial_inference_steps": 25,
+    "initial_guidance_scale": 7
+  }
+}

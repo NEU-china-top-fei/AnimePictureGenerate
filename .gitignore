@@ -1,0 +1,48 @@
+# Python environments, caches and editor state
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.cache/
+.local/
+.ipynb_checkpoints/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+~$*
+.~lock.*#
+
+# Local credentials and machine configuration
+.env
+.env.*
+.aws/
+.agents/
+.codex/
+.kaggle/
+kaggle.json
+access_token
+*.pem
+*.key
+
+# Downloaded data, model weights and generated bundles
+/data/
+/outputs/
+/output/
+/SHA256SUMS.json
+/tmp/
+/kaggle/
+/reports/
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.partial
+
+# Keep lightweight experimental evidence; full images and weights stay local.
+/results/*
+!/results/README.md
+!/results/analysis/

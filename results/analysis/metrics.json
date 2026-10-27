@@ -1,0 +1,418 @@
+{
+  "clip_model": {
+    "repo_id": "openai/clip-vit-base-patch32",
+    "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+    "metric": "raw cosine similarity, not scaled CLIPScore",
+    "device": "cpu",
+    "torch": "2.8.0+cpu"
+  },
+  "models": {
+    "E0": {
+      "images": 96,
+      "safety_flag_count": 6,
+      "black_image_count": 6,
+      "unfiltered_images": 90,
+      "clip_mean_own_unfiltered": 0.3818445669280158,
+      "clip_mean_common_unfiltered": 0.3832743949704356,
+      "clip_common_prompt_balanced": 0.3811846808012989,
+      "generation_seconds_mean": 4.48326957434377,
+      "generation_seconds_median": 4.485050102499827
+    },
+    "E1": {
+      "images": 96,
+      "safety_flag_count": 13,
+      "black_image_count": 13,
+      "unfiltered_images": 83,
+      "clip_mean_own_unfiltered": 0.3321742900164731,
+      "clip_mean_common_unfiltered": 0.3328920618280188,
+      "clip_common_prompt_balanced": 0.32670595062275726,
+      "generation_seconds_mean": 4.798177123697911,
+      "generation_seconds_median": 4.784302173499782
+    },
+    "E2": {
+      "images": 96,
+      "safety_flag_count": 9,
+      "black_image_count": 9,
+      "unfiltered_images": 87,
+      "clip_mean_own_unfiltered": 0.3645149798228823,
+      "clip_mean_common_unfiltered": 0.36459451023634376,
+      "clip_common_prompt_balanced": 0.3597346430437433,
+      "generation_seconds_mean": 4.690175359874918,
+      "generation_seconds_median": 4.691122069500125
+    }
+  },
+  "common_unfiltered_images_per_model": 77,
+  "common_prompt_count": 24,
+  "paired_differences": {
+    "E1-E0": {
+      "mean_difference": -0.05447873017854161,
+      "ci95_prompt_bootstrap": [
+        -0.06763060304025809,
+        -0.04213455383044979
+      ],
+      "prompt_count": 24
+    },
+    "E2-E0": {
+      "mean_difference": -0.021450037757555645,
+      "ci95_prompt_bootstrap": [
+        -0.030721949328047532,
+        -0.012617486917103335
+      ],
+      "prompt_count": 24
+    },
+    "E1-E2": {
+      "mean_difference": -0.03302869242098597,
+      "ci95_prompt_bootstrap": [
+        -0.043891815375536686,
+        -0.023268477403972716
+      ],
+      "prompt_count": 24
+    }
+  },
+  "training": {
+    "E1": {
+      "optimizer_updates": 2000,
+      "last_validation_loss": 0.1009739109625419,
+      "best_validation_loss": 0.1009739109625419,
+      "update_seconds_total": 3037.543934516994,
+      "update_seconds_median": 1.508409960999984,
+      "first100_mean_loss": 0.09325086552009453,
+      "last100_mean_loss": 0.09413590103795286,
+      "peak_allocated_gpu_gb": 2.085249536,
+      "adapter_bytes": 12792952,
+      "adapter_sha256": "1593bc74e06bc9ebcb968a6d557aeb4e109dd62293ba338d747071f8c665451f",
+      "adapter_tensor_count": 256,
+      "adapter_parameters": 3188736
+    },
+    "E2": {
+      "optimizer_updates": 2000,
+      "last_validation_loss": 0.1010113245768783,
+      "best_validation_loss": 0.1010113245768783,
+      "update_seconds_total": 3076.567233788998,
+      "update_seconds_median": 1.5315367245000289,
+      "first100_mean_loss": 0.09330440477759111,
+      "last100_mean_loss": 0.09415278229687829,
+      "peak_allocated_gpu_gb": 2.085249536,
+      "adapter_bytes": 12792952,
+      "adapter_sha256": "f29a907eef69fb3c4149ce29338f02019cbaa576ac77454ea1b2c18c7fd97365",
+      "adapter_tensor_count": 256,
+      "adapter_parameters": 3188736
+    }
+  },
+  "shared_keys": [
+    [
+      0,
+      303
+    ],
+    [
+      1,
+      101
+    ],
+    [
+      1,
+      202
+    ],
+    [
+      1,
+      303
+    ],
+    [
+      1,
+      404
+    ],
+    [
+      2,
+      101
+    ],
+    [
+      2,
+      202
+    ],
+    [
+      2,
+      303
+    ],
+    [
+      2,
+      404
+    ],
+    [
+      3,
+      101
+    ],
+    [
+      3,
+      202
+    ],
+    [
+      3,
+      303
+    ],
+    [
+      3,
+      404
+    ],
+    [
+      4,
+      101
+    ],
+    [
+      4,
+      202
+    ],
+    [
+      4,
+      303
+    ],
+    [
+      4,
+      404
+    ],
+    [
+      5,
+      303
+    ],
+    [
+      5,
+      404
+    ],
+    [
+      6,
+      101
+    ],
+    [
+      6,
+      202
+    ],
+    [
+      6,
+      303
+    ],
+    [
+      6,
+      404
+    ],
+    [
+      7,
+      101
+    ],
+    [
+      8,
+      202
+    ],
+    [
+      8,
+      303
+    ],
+    [
+      9,
+      202
+    ],
+    [
+      9,
+      303
+    ],
+    [
+      10,
+      101
+    ],
+    [
+      10,
+      202
+    ],
+    [
+      10,
+      303
+    ],
+    [
+      10,
+      404
+    ],
+    [
+      11,
+      101
+    ],
+    [
+      11,
+      202
+    ],
+    [
+      11,
+      303
+    ],
+    [
+      11,
+      404
+    ],
+    [
+      12,
+      101
+    ],
+    [
+      12,
+      202
+    ],
+    [
+      12,
+      303
+    ],
+    [
+      12,
+      404
+    ],
+    [
+      13,
+      101
+    ],
+    [
+      13,
+      202
+    ],
+    [
+      13,
+      303
+    ],
+    [
+      14,
+      101
+    ],
+    [
+      14,
+      202
+    ],
+    [
+      14,
+      303
+    ],
+    [
+      14,
+      404
+    ],
+    [
+      15,
+      101
+    ],
+    [
+      15,
+      303
+    ],
+    [
+      16,
+      101
+    ],
+    [
+      16,
+      202
+    ],
+    [
+      16,
+      303
+    ],
+    [
+      16,
+      404
+    ],
+    [
+      17,
+      101
+    ],
+    [
+      17,
+      202
+    ],
+    [
+      17,
+      303
+    ],
+    [
+      17,
+      404
+    ],
+    [
+      18,
+      101
+    ],
+    [
+      18,
+      202
+    ],
+    [
+      18,
+      303
+    ],
+    [
+      18,
+      404
+    ],
+    [
+      19,
+      101
+    ],
+    [
+      19,
+      202
+    ],
+    [
+      19,
+      303
+    ],
+    [
+      19,
+      404
+    ],
+    [
+      20,
+      101
+    ],
+    [
+      20,
+      404
+    ],
+    [
+      21,
+      101
+    ],
+    [
+      21,
+      202
+    ],
+    [
+      21,
+      303
+    ],
+    [
+      21,
+      404
+    ],
+    [
+      22,
+      101
+    ],
+    [
+      22,
+      202
+    ],
+    [
+      22,
+      303
+    ],
+    [
+      22,
+      404
+    ],
+    [
+      23,
+      101
+    ],
+    [
+      23,
+      404
+    ]
+  ],
+  "limitations": [
+    "one training seed",
+    "CLIP similarity is not style or anatomy quality",
+    "safety-filtered images excluded from semantic comparison; selection bias possible",
+    "bootstrap resamples prompts, not independent training runs"
+  ]
+}

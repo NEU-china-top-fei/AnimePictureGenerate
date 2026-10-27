@@ -1,0 +1,12 @@
+# Install PyTorch and torchvision matching your CUDA environment separately.
+# Used by the training pipeline, including result plots.
+diffusers==0.35.1
+transformers==4.55.4
+peft==0.17.1
+accelerate==1.10.1
+huggingface-hub==0.34.4
+safetensors==0.6.2
+pyarrow==19.0.1
+Pillow>=10.0,<12
+numpy>=1.26,<2
+matplotlib>=3.8,<4

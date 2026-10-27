@@ -1,0 +1,7 @@
+# Install CPU PyTorch separately: pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+transformers==4.55.4
+huggingface-hub==0.36.2
+safetensors==0.8.0
+numpy==2.4.6
+Pillow==12.3.0
+matplotlib==3.10.6
