@@ -12,7 +12,7 @@
 
 数据集为 Naruto BLIP Captions，清洗后 1,220 张，训练集 976 张。E1、E2 均完成 2,000 次更新，LoRA rank=16、alpha=16、学习率 1e-4、有效批量 4。三组使用相同的 24 条提示和 4 个种子，各生成 96 张 512×512 图像。
 
-上表使用三组共同未过滤的 77 组配对样本，先按提示词汇总再等权平均。CLIP 衡量图文匹配，不代表动漫风格或美学质量。已有结果见 [指标汇总](results/analysis/metrics.json) 和 [逐图分数](results/analysis/clip_per_image.csv)。
+上表使用三组共同未过滤的 77 组配对样本，先按提示词汇总再等权平均。CLIP 衡量图文匹配。已有结果见 [指标汇总](results/analysis/metrics.json) 和 [逐图分数](results/analysis/clip_per_image.csv)。
 
 ## 目录
 
@@ -100,4 +100,3 @@ make check
 - 数据集为 [Naruto BLIP Captions](https://huggingface.co/datasets/lambda/naruto-blip-captions)。
 - 评价使用 [CLIP ViT-B/32](https://huggingface.co/openai/clip-vit-base-patch32)。
 
-模型与数据版本固定于配置及评价记录。数据卡未给出明确的独立许可证字段，使用时应遵循各来源的许可与要求。
