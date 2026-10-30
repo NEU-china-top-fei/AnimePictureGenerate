@@ -55,7 +55,7 @@ EXPERIMENT_CACHE=.cache/run_01 \
 python src/experiment.py orchestrate
 ```
 
-每次实验保存配置快照。同一结果目录中的重启保留原截止时间和恢复状态；独立实验应使用新的结果目录。训练沿用原双 GPU 实验流程，本次仓库整理只验证了入口、配置初始化和测试，未重新运行 GPU 训练。
+每次实验保存配置快照。同一结果目录中的重启保留原截止时间和恢复状态；独立实验应使用新的结果目录。
 
 ## 推理
 
@@ -83,15 +83,12 @@ python scripts/evaluate_results.py \
   --output outputs/analysis
 ```
 
-评价器针对完整的本次实验设置，要求每组 96 张生成图、生成清单、2,000 步训练日志和最终适配器，输出逐图 CLIP 余弦与配对统计。Git 默认只保留已有指标，完整图像、权重和运行记录留在本地。
-
-## 检查
+评价器针对完整的本次实验设置，要求每组 96 张生成图、生成清单、2,000 步训练日志和最终适配器，输出逐图 CLIP 余弦与配对统计。
 
 ```bash
 make check
 ```
 
-测试使用 Python 标准库，不需要 GPU 或下载模型。`make export` 可生成只含代码、配置和指标的 `output/anime_lora_github.zip`。
 
 ## 来源
 
